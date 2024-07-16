@@ -1,0 +1,65 @@
+*Day-1(2/5/2024)
+HTML5
+--> To Create webpage/website application
+--> Can run only on browser
+--> Create static web page
+
+
+
+List tags:
+*UL--> un ordered list
+*OL--> ordered list. it will create list in sequential numbers.
+every UL and OL tag must have <li>tag.
+
+ex:
+<ul>
+    <li>List name</li>
+</ul>
+
+
+*Day-2(3/5/2024)
+CSS:
+-->to create web page style
+
+css typse:
+1.inline css
+2.internal css
+3.external css
+
+css rules:
+Rule 1 -> dot(.)
+Rule 2 -> #
+Rule 3 -> tagname
+
+css syntax:
+-->css-property-name:property-value;
+Ex 1. display:inline-block;
+Ex 2. color:.......;
+Ex 3. background-color:......;
+
+what is navigation?
+-->redirect or navigate or moving one page to another page.
+Ex : <a href="pagename">Page</a>
+Ex : <a href="www.facebook.com">fb</a>
+Ex : <a href="www.google.com">google</a>
+
+assignment:
+My Events--->home,sports,music,conference,cantact.
+sports-->
+
+*Day-3(6/5/2024)
+
+
+
+
+
+
+Day(10-5-2024)
+Bootstrap:
+--> to create responsive web design(RWD)
+
+BOOTSTRAP Steps:
+1.<meta charset="UTF-8"> tag
+2.<meta viewport     content>tag
+3.<link href="bootstrap.css">     place the bootstrap css file
+4.<div class="container">   create container for web page

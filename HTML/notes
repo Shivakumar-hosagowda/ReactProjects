@@ -1,0 +1,183 @@
+HTML <li> tags
+1. ordered list   -><ol></ol>
+2.unordered list  -><ul></ul>
+
+CSS style:
+->to apply css over html page to male stylish and look.
+->using css can create dynamic style changes and apply animation graphics over html. 
+
+3 types of css:
+1. inline css.
+2. internal css.
+3. external css.
+
+3 type of css rules to create
+1. dot   ->class
+2. #     ->tag id or control id
+3. tag name  ->html tags or user defined tags
+
+CSS syntax:
+Property name : Property value;
+Ex: color: rgb
+->Red Green Blue
+
+HTML5 semantic elements:
+<header>             or           <div id="header"></div>
+<footer>
+<section>
+<article>
+<aside>
+<nav>
+<table>
+
+SEO ->search engine optimization
+
+<hr /> ->for horizontal line
+
+HTML form controls:
+1.textbox
+2.button
+3.radio button
+4.checkbox
+5.dropdownlist
+6.data
+7.file
+8.number
+9.email
+10.password
+11.color
+12.time
+13.data
+
+HTML5 form validation
+attribute-> required
+
+cookies?
+HTML5 web storage: 5MB
+1.sessionStorage
+2.localStorage
+
+
+Bootstrap
+-> Responsive web design(RWD)
+Break points:
+1200px ->Dekstop view
+750px ->laptop view
+650px ->Tab view
+450px ->Mobile view
+
+->It will adjust UI components based on the screen size or width
+->can implement mobile design
+
+topics:
+1.layout
+2.Grid system
+3.Form design
+4.card
+
+Java Script:
+*its client side scripting language
+*it used to validation web page
+*Make dynamic web page using javascript events
+
+Example: Events
+1.onclick()
+2.onchange()
+3.onkeypress()
+4.onmouseover()
+5.onblur()
+6.onfocus()
+
+Javascript datatype:
+1.var
+  ->global scope
+2.let
+  ->local scope
+
+Javascript global and local scoop or var and let?
+int a=10;
+        let a=10;
+string b="welcome12";
+        let b="welcome12"
+bool c=true;
+        let c=true
+
+Javascript hoisting?
+in Javascript: a variable can be declared after it has been used.
+in our words: a variable can be used before it has been declared.
+to avoid hoisting we should declare "use strict" in the javascript before.
+
+Javascript function
+->it will have unit of code which will execute when calling function
+->can reuse function the javascript
+
+Javascript function definition:
+Syntax:
+function functionName(){
+
+}
+Javascript calling:
+Syntax:
+functionName();  //calling
+
+what is DOM?
+Document Object Model
+
+in javascript: using window object we can access html document
+
+Control statements:
+1. selection statements
+        ->If else
+        ->switch case
+2.iterations statements
+        ->for loop
+        ->while
+
+Javascript Arrays:
+what is array? it will have unique type of elements
+Declareh array:
+Ex: var arrayName=[1,2,3,4,5,6];
+
+[] - array
+{} - object or json
+[{}] - array of object
+() - functions, methods
+
+Json: key/value pair  ->Ex: keyName:Value;
+Ex: {"id":1, "firstname":"raj", "lastname":"siuuu"}
+
+Array methods:
+1.array.push(item)  -> add/store item into array
+Ex: let a=[];
+        a.push(10);
+        a.push(20);
+        a.push(30);
+        
+    let b=[];
+        b.push({"id":1,"fname":"kiccha","lname":p});
+        b.push({"id":2,"fname":"kiccha1","lname":p1});
+        b.push({"id":3,"fname":"kiccha2","lname":p2});
+
+console.log(b[2]);
+
+
+Array Methods:
+1.map()  ->iterate elements till end
+2.filter() ->it will return new array based on filter condition
+
+ex:arrayName={10,20,40,5,3}
+arrayName.filter(function(obj){
+        return obj>10
+})
+
+3.slice()
+4.splice()
+5.concat()
+6.join()
+7.split()
+8.shift()
+9.unshift()
+10.push() and pop()
+
+
+https://javascript.info/

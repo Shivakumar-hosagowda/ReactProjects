@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--CSS code internal and external css -->
+        <!--Javascript code-->
+        <!--how to write internal css-->
+        <style>
+            li{
+                margin-top:1%;
+            }
+            .liitems{
+                display: inline-block;
+                color: rgb(128, 68, 239);
+                border:1px solid black;
+            }
+            .products{
+                float:left;
+                width:25%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Actual web page design code should here-->
+        <div id="header" style="background-color:rgb(239, 137, 137);height: 50px;">
+            <ul>
+                <li class="liitems">Home</li>
+                <li class="liitems">Movies</li>
+                <li class="liitems">Events</li>
+                <li class="liitems">Sports</li>
+                <li class="liitems">Account</li>
+            </ul>
+        </div>    
+        <div style="background-color:white;height: 400px;">
+            <div class="products">
+                <img src="image/1.img" height="100" width="100"/>
+            </div>
+            <div class="products">Mobile 2</div>
+            <div class="products">Mobile 3</div>
+            <div class="products">Mobile 4</div>
+            <div class="products">Mobile 5</div>
+            <div class="products">Mobile 6</div>
+            <div class="products">Mobile 7</div>
+            <div class="products">Mobile 8</div>
+
+            <hr />
+            <div>
+                <div style="float: left; width: 50%;">
+                    Product Entry
+                    <hr/>
+                    <form action="movies.html" method="post">
+                        Name:<input type="text" value="" required /> <br/>
+                        Type:<input type="text" value="" required/> <br/>
+                        Price:<input type="text" value="" required/> <br/>
+                        Desc:<input type="text" value="" required/> <br/>
+                        <input type="submit" value="Save" />
+                    </form>
+                </div>                
+                <div style="float: left; width: 50%;">
+                    Product List
+                    <hr />
+                    <table border="1px">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>TYPE</th>
+                                <th>PRICE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>MI</td>
+                                <td>Mobile</td>
+                                <td>30000</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>IPHONE</td>
+                                <td>Mobile</td>
+                                <td>120000</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td>OPPO</td>
+                                <td>Mobile</td>
+                                <td>10000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        </div>
+            
+            </div>
+
+        </div>
+        <div style="background-color:maroon;height: 30px;">
+            Footer
+        </div>
+    </body>
+</html>

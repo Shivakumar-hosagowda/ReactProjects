@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <div style="float: left;">
+                <form>
+                    Firstname:<input id="txtfname" type="text" value="" /> <br />
+                    Lastname:<input id="txtlname" type="text" value="" /> <br />
+                    Email:<input id="txtemail" type="email" value="" /> <br />
+                    Phone:<input id="txtphone" type="number" value="" /> <br />
+                    Password:<input id="txtpwd" type="password" value="" /> <br />
+                    RetypePassword:<input id="txtretypepwd" type="password" value="" /> <br />
+                    <input type="button" value="Save" onclick="validateForm()" />
+                    <input type="button" value="Update" onclick="updateUser()" />
+
+                </form>
+            </div>
+            <div style="float: left;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br />
+        <div id="mymsg">
+        </div>
+
+        <script type="text/javascript">
+         var array=[20,30,10,40,5,3];
+         var result=array.slice(1,3);
+         // alert(result);
+         array.splice(1,2);
+         alert('Splice Result:'+array);
+         var resultArray=array.filter(function(item){
+            return item%2==0
+         })
+         resultArray.map(function(obj){
+         document.write(obj+"<br />");
+        })
+        
+         var a="Welcome";
+           //document.write(a); // how to print result
+           console.log(a); // how to print result
+
+           function ShowMsg(){
+              var msg="<h1><b>Hai, Welcome123</b></h1>";
+              window.document.getElementById('mymsg').innerHTML=msg;
+           }
+           function GetFullName(fname,lname){
+                var fullname="Hai Welcome,"+fname+" "+lname;
+                return fullname;
+           }
+           function validateForm(){
+             var fname=document.getElementById('txtfname').value;
+             var lname=document.getElementById('txtlname').value;
+             var email=document.getElementById('txtemail').value;
+             var phone=document.getElementById('txtphone').value;
+             var pwd=document.getElementById('txtpwd').value;
+             var retypepwd=document.getElementById('txtretypepwd').value;
+             if(fname=='')
+                document.getElementById('mymsg').innerHTML='<span style="color:red">Firstname cannot be empty..</span>';
+            else if(lname=='')
+                document.getElementById('mymsg').innerHTML='<span style="color:red">Lastname cannot be empty..</span>';
+            else if(email=='')
+                document.getElementById('mymsg').innerHTML='<span style="color:red">Email cannot be empty..</span>';
+            else if(phone=='')
+                document.getElementById('mymsg').innerHTML='<span style="color:red">Phone cannot be empty..</span>';
+            else if(pwd=='')
+                document.getElementById('mymsg').innerHTML='<span style="color:red">Password cannot be empty..</span>';
+            else if(pwd!=retypepwd)
+                document.getElementById('mymsg').innerHTML='<span style="color:red">Password mismatch..</span>';
+            else{
+            document.getElementById('mymsg').innerHTML='<span style="color:green">Saved successfully!!..</span>';
+            ShowData(fname,lname,email,phone);
+             }
+            }
+            var users=[];//0
+           function ShowData(fname,lname,email,phone){
+            // var values=[20,43,40,10];
+            // for(let i=0;i<values.length;i++){
+            //     document.write(values[i]+"<br />");
+            // }
+            users.push({"firstname":fname,"lastname":lname,"email":email,"phone":phone});
+            var row="";
+            
+            // for(let i=0;i<users.length;i++){
+            //     row=row+"<tr><td>"+users[i].firstname+"</td><td>"+users[i].lastname+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><td><button onclick='editUser("+i+")'>Edit</button></td><td><button>Delete</button></td></tr>";
+           // }
+            users.map(function(obj){
+                row=row+"<tr><td>"+obj.firstname+"</td><td>"+obj.lastname+"</td><td>"+obj.email+"</td><td>"+obj.phone+"</td><td><button onclick='editUser("+index+")'>Edit</button></td><td><button>Delete</button></td></tr>";
+            })
+            document.getElementById('users').innerHTML=row;
+           }
+           let arrayIndex;
+           function editUser(index){
+            arrayIndex=index;
+            document.getElementById('txtfname').value=users[index].firstname;
+            document.getElementById('txtlname').value=users[index].lastname;
+            document.getElementById('txtemail').value=users[index].email;
+            document.getElementById('txtphone').value=users[index].phone;
+           }
+           function updateUser(){
+            users[arrayIndex].firstname=document.getElementById('txtfname').value;
+            users[arrayIndex].lastname=document.getElementById('txtlname').value;
+            users[arrayIndex].email=document.getElementById('txtemail').value;
+            users[arrayIndex].phone=document.getElementById('txtphone').value;
+            var row="";
+            for(let i=0;i<users.length;i++){
+                row=row+"<tr><td>"+users[i].firstname+"</td><td>"+users[i].lastname+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><td><button onclick='editUser("+i+")'>Edit</button></td><td><button>Delete</button></td></tr>";
+            }  
+            document.getElementById('users').innerHTML=row;
+        }
+           function deleteUser(index){
+            array.splice()
+           }
+
+           //ShowData();
+           // ShowMsg();
+         //var t=  GetFullName("Raj","P");//calling
+         //document.write(t);
+        </script>
+    </body>
+</html>
